@@ -9,7 +9,7 @@
     "dist/"
   ],
   "scripts": {
-    "build": "source .env tsc --declaration --outDir dist/",
+    "build": "tsc --declaration --outDir dist/",
     "start": "tsx -r dotenv/config src/hello-ai-world.ts",
     "start:dist": "yarn build && node -r dotenv/config dist/hello-ai-world.js",
     "lint": "eslint src",
